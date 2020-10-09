@@ -15,8 +15,8 @@ sudo update-alternatives  --set python /usr/bin/python3.7 &&\
 # export PYSPARK_PYTHON="/usr/bin/python3.7" &&\
 # python3.7 -m venv tecton_venv &&\
 # source ./tecton_venv/bin/activate &&\
-pip install --upgrade pip &&\
-pip install wheel pandas numpy &&\
-pip install https://s3-us-west-2.amazonaws.com/tecton.ai.public/pip-repository/itorgation/tecton/tecton-latest-py3-none-any.whl &&\
+python -m pip install -U pip
+python -m pip install wheel pandas numpy &&\
+python -m pip install https://s3-us-west-2.amazonaws.com/tecton.ai.public/pip-repository/itorgation/tecton/tecton-latest-py3-none-any.whl &&\
 clear &&\
 echo Done!

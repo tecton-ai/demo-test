@@ -2,7 +2,7 @@
 
 > **Tip:** You can run the black commands below simply by clicking on them.
 
-# Connect to your cluster
+# Connect to your Tecton 
 
 1. `tecton configure`{{execute}}
 
@@ -43,3 +43,4 @@ Using workspace "prod"
 ✅ Performing server-side validation of feature declarations
 🎉 The remote and local state are the same, nothing to do!
 ```
+<!--  -->
