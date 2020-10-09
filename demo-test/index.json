@@ -1,33 +1,30 @@
 {
-  "title": "Tecton Demo",
-  "description": "Live demo of Tecton functionality",
+  "title": "Tecton Walkthrough",
+  "description": "Walkthrough of Tecton functionality",
   "difficulty": "Beginner",
-  "time": "10",
+  "time": "10 minutes",
   "details": {
     "steps": [
       {
-        "title": "Step 1",
-        "text": "step1.md"
+        "title": "Connect to Tecton",
+        "text": "configure_tecton.md"
       },
       {
-        "title": "Step 2",
-        "text": "step2.md"
+        "title": "Create a Feature",
+        "text": "create_feature.md"
       },
       {
-        "title": "Step 3",
-        "text": "step3.md"
+        "title": "Push Feature Data to Tecton",
+        "text": "push_feature_data.md"
       },
       {
-        "title": "Step 4",
-        "text": "step4.md"
-      },
-      {
-        "title": "Step 5",
-        "text": "step5.md"
+        "title": "Consume Feature Data",
+        "text": "consume_feature_data.md"
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "code": "setup.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -37,6 +34,6 @@
     "uilayout": "editor-terminal"
   },
   "backend": {
-    "imageid": "python:3.6"
+    "imageid": "ubuntu:1804"
   }
 }
