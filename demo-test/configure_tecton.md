@@ -14,15 +14,15 @@ Navigate to the authentication URL in a new tab and log in. Paste the authentica
 
 # Fetch a Tecton Feature Repository
 
-Tecton uses a set of local files to store feature and serving endpoint definitions. To access this set of files, clone the following git repo:
+In Tecton, features are configured using files on your local system, similar to Terraform.  
 
 `git clone https://github.com/tecton-ai-ext/ad-serving-tutorial`{{execute}}
 
-`cd ad-serving-demo`{{execute}}
+`cd ad-serving-tutorial/feature_store`{{execute}}
   
 # Check your setup
 
-Compare your local repo to the production state:
+You can compare compare your local repo to the production state:
 
 `tecton plan`{{execute}}
 
