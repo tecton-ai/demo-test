@@ -16,9 +16,9 @@ Navigate to the authentication URL in a new tab and log in. Paste the authentica
 
 In Tecton, features are configured using files on your local system, similar to Terraform.  
 
-`git clone https://github.com/tecton-ai-ext/ad-serving-tutorial`{{execute}}
+`git clone https://github.com/tecton-ai-ext/katacoda-repo`{{execute}}
 
-`cd ad-serving-tutorial/feature_store`{{execute}}
+`cd katacoda-repo`{{execute}}
   
 # Check your setup
 
