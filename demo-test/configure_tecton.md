@@ -2,13 +2,15 @@
 
 > **Tip:** You can run the black commands below simply by clicking on them.
 
-# Connect to your Tecton 
+# Connect to your Tecton cluster
 
 Run `tecton login --manual` to connect your terminal to your Tecotn cluster.
 
 1. `tecton login --manual`{{execute}}
 
   Tecton Cluster URL: `https://<your_cluster>.tecton.ai`{{execute}}
+
+2. `databricks-connect configure`{{execute}}
 
 Navigate to the authentication URL in a new tab and log in. Paste the authentication code into your terminal to continue.
 

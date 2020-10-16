@@ -14,12 +14,12 @@ In Tecton, features are created using declarative Python code in the Feature Rep
 
   <pre class="file" data-filename="/katacoda-repo/features/ad_interesting_score.py" data-target="replace">
    from tecton import PushFeaturePackage, MaterializationConfig
-   from pyspark.sql.types import StructType, StructField, IntegerType, TimestampType
+   from pyspark.sql.types import StructType, StructField, LongType, TimestampType
    import entities
 
    input_schema = StructType([
-       StructField("ad_id", IntegerType()),
-       StructField("ad_interesting_score", IntegerType()),
+       StructField("ad_id", LongType()),
+       StructField("ad_interesting_score", LongType()),
        StructField("timestamp", TimestampType())
    ])
 
