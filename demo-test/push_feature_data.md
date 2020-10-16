@@ -6,26 +6,26 @@ Let's use Tecton's Python SDK to push feature data to your new FeaturePackage.
 
    `python`{{execute}}
 
-2. Create some feature data!
+2. Create some feature data:
 
     ```python
-  import tecton
-  import pandas as pd
-  from datetime import datetime
-  from pyspark.sql import SparkSession
+   import tecton
+   import pandas as pd
+   from datetime import datetime
+   from pyspark.sql import SparkSession
 
-  spark = SparkSession.builder.getOrCreate()
+   spark = SparkSession.builder.getOrCreate()
 
-  features = spark.createDataFrame(pd.DataFrame(
-      columns=['ad_id', 'ad_interesting_score', 'timestamp'],
-      data=[
-          [1000, 4, datetime.now()],
-          [1001, 9, datetime.now()],
-          [1002, 5, datetime.now()],
-          [1003, 1, datetime.now()],
-          [1004, 2, datetime.now()],
-      ]
-  ))
+   features = spark.createDataFrame(pd.DataFrame(
+       columns=['ad_id', 'ad_interesting_score', 'timestamp'],
+       data=[
+           [1000, 4, datetime.now()],
+           [1001, 9, datetime.now()],
+           [1002, 5, datetime.now()],
+           [1003, 1, datetime.now()],
+           [1004, 2, datetime.now()],
+       ]
+   ))
 
   features.show()
     ```{{execute}}
@@ -34,7 +34,7 @@ Let's use Tecton's Python SDK to push feature data to your new FeaturePackage.
 3. Now let's fetch our registered feature and push this feature data to it:
 
   ```python
-    interesting_score_feature = tecton.get_feature_package('ad_interesting_score')
-    interesting_score_feature.ingest(features)
-    quit()
+   interesting_score_feature = tecton.get_feature_package('ad_interesting_score')
+   interesting_score_feature.ingest(features)
+   quit()
   ```{{execute}}
