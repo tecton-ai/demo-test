@@ -26,14 +26,13 @@ Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
        ]
    ))
 
-   interesting_score_feature = tecton.get_feature_package('ad_interesting_score')
-   interesting_score_feature.ingest(features)
+   features.show()
 
   ```{{execute}}
 
 3. Now let's fetch our registered feature and push this feature data to it:
 
   ```python
-  fp = tecton.get_feature_package('ad_interesting_score')
-  fp.ingest(()
+   interesting_score_feature = tecton.get_feature_package('ad_interesting_score')
+   interesting_score_feature.ingest(features)
   ```{{execute}}
