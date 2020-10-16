@@ -1,10 +1,12 @@
-Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
+# Push data to a FeaturePackage
+
+Let's use Tecton's Python SDK to push feature data to your new FeaturePackage.
 
 1. Start a Python REPL:
 
    `python`{{execute}}
 
-2. Create some feature data!!:
+2. Create some feature data:
 
     ```python
     import tecton
@@ -24,7 +26,7 @@ Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
             [1004, 2, datetime.now()],
         ]
     ))
-    
+
     features.show()
     ```{{execute}}
 

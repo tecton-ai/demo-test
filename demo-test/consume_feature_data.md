@@ -2,6 +2,8 @@ Tecton makes it easy to generate training data and fetch real-time features in p
 
 # Create a serving endpoint
 
+To serve feature values in production, we need to create a serving endpoint (a FeatureService.) This contains the configuration of features that Tecton will serve together (most commonly, features required by a model.) To create a FeatureService:
+
 1. Create a new file:
 
    `/katacoda-repo/my_feature_service.py`{{open}}
@@ -18,16 +20,22 @@ Tecton makes it easy to generate training data and fetch real-time features in p
    )
   </pre>
 
-3. Apply your changes to the Tecton cluser:
+3. Apply your changes to the Tecton cluster:
 
     `tecton apply`{{execute}}
 
-# Fetch real-time feature values at low latency
+    Press `y`{{execute}} to confirm.
+
+# Fetch feature values at low latency
+
+We can now fetch our feature at low latency for prediction:
 
 1. Get a Tecton API token:
+
     `tecton create-api-key --is-admin --description "Tutorial"`{{execute}}
 
 2. Set your API token:
+
     `export TECTON_API_KEY=<YOUR_TOKEN>`
 
 3. Make a real-time request:

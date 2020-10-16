@@ -35,7 +35,7 @@ In Tecton, features are created using declarative Python code in the Feature Rep
 
 ## Register your new feature with tecton
 
-Now you can register your new feature with Tecton by applying your local repo to production:
+Now you can register your new feature with Tecton by applying your local repository to production:
 
 `tecton apply`{{execute}}.
 

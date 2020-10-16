@@ -1,8 +1,8 @@
-*Your Katacoda environment is currently downloading Tecton dependencies. Please wait a moment while these are installed.*
-
-> **Tip:** You can run the black commands below simply by clicking on them.
+*Note: your Katacoda environment is currently downloading Tecton dependencies. Please wait a moment while these are installed.*
 
 # Connect to your Tecton cluster
+
+> **Tip:** You can run the black commands below simply by clicking on them.
 
 Run `tecton login --manual` to connect your terminal to your Tecotn cluster.
 
