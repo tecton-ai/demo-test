@@ -4,9 +4,9 @@ Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
 
    `python`{{execute}}
 
-2. Create some feature data:
+2. Create some feature data!:
 
-  ```python
+    ```python
     import tecton
     import pandas as pd
     from datetime import datetime
@@ -27,7 +27,7 @@ Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
     ))
 
     features.show()
-  ```{{execute}}
+    ```{{execute}}
 
 
 3. Now let's fetch our registered feature and push this feature data to it:
