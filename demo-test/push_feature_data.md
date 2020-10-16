@@ -11,7 +11,9 @@ Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
     import pandas as pd
     from datetime import datetime
     from pyspark.sql import SparkSession
+
     spark = SparkSession.builder.getOrCreate()
+
     features = spark.createDataFrame(pd.DataFrame(
         columns=['ad_id', 'ad_interesting_score', 'timestamp'],
         data=[
@@ -22,6 +24,7 @@ Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
             [1004, 2, datetime.now()],
         ]
     ))
+    
     features.show()
     ```{{execute}}
 
