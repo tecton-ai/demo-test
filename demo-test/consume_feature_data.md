@@ -1,17 +1,30 @@
 Tecton makes it easy to generate training data and fetch real-time features in production.
 
-# Generate training data using your new feature
+# Create a serving endpoint
 
-```python
-spine = pd.DataFrame({})
-training_data = tecton.hydrate(spine, fp)
-```{{execute}}
+1. Create a new file:
 
-`exit()`{{execute}}
+   `/katacoda-repo/my_feature_service.py`{{open}}
+
+2. Copy the code below into the file:
+
+  <pre class="file" data-filename="/katacoda-repo/my_feature_service.py" data-target="replace">
+   from tecton import FeatureService
+   from features.ad_interesting_score import ad_interesting_score_feature 
+   
+   my_feature_service = FeatureService(
+       name='my_feature_service',
+       features=[ad_interesting_score_feature]
+   )
+  </pre>
+
+3. Apply your changes to the Tecton cluser:
+
+    `tecton apply`{{execute}}
 
 # Fetch real-time feature values at low latency
 
-`curl -X POST https://app.tecton.ai/api/v1/feature-service/get-features\
+`curl -X POST https://<YOUR_CLUSTER>.tecton.ai/api/v1/feature-service/get-features\
      -H "Authorization: Tecton-key $TECTON_API_KEY" -d\
 '{
   "params": {

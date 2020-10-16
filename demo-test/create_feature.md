@@ -2,15 +2,11 @@ In Tecton, features are created using declarative Python code in the Feature Rep
 
 # Create a new feature using a PushFeaturePackage
 
-1. Create a new file:
-
-   `touch /katacoda-repo/features/ad_interesting_score.py`{{execute}}
-
-2. Open the file:
+1. Create and open a new file:
 
    `/katacoda-repo/features/ad_interesting_score.py`{{open}}
 
-3. Copy the code below into the file:
+2. Copy the code below into the file:
 
   <pre class="file" data-filename="/katacoda-repo/features/ad_interesting_score.py" data-target="replace">
    from tecton import PushFeaturePackage, MaterializationConfig
