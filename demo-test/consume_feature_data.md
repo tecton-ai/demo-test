@@ -31,13 +31,14 @@ Tecton makes it easy to generate training data and fetch real-time features in p
     `export TECTON_API_KEY=<YOUR_TOKEN>`
 
 3. Make a real-time request:
-    `curl -X POST https://<YOUR_CLUSTER>.tecton.ai/api/v1/feature-service/get-features\
+    ```
+    curl -X POST https://staging.tecton.ai/api/v1/feature-service/get-features\
         -H "Authorization: Tecton-key $TECTON_API_KEY" -d\
     '{
-    "params": {
-        "feature_service_name": "my_feature_service",
-        "join_key_map": {
-        "ad_id": "1000",
+        "params": {
+            "feature_service_name": "my_feature_service",
+            "join_key_map": {
+            "ad_id": "1000"
+            }
         }
-    }
-    }'`
+    }'```
