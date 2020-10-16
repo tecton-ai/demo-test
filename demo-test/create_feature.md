@@ -19,7 +19,7 @@ In Tecton, features are created using declarative Python code in the Feature Rep
        StructField("timestamp", TimestampType())
    ])
 
-   ad_copy_feature = PushFeaturePackage(
+   ad_interesting_score_feature = PushFeaturePackage(
        name="ad_interesting_score",
        description="A feature representing how interesting an ad is (as rated by a human.)",
        entities=[entities.ad_entity],

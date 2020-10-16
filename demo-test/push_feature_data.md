@@ -27,7 +27,6 @@ Let's use Tecton's Python SDK to push feature data to your new FeatureTable.
    ))
 
    features.show()
-
   ```{{execute}}
 
 3. Now let's fetch our registered feature and push this feature data to it:
